@@ -1,3 +1,5 @@
+console.log("Exercise #1");
+
 /*
 Exercise #1 (sugerencia: join())
 Copy the code below into your workspace:
