@@ -7,10 +7,11 @@ body{
     background-color: grey;
     color: whitesmoke;
 }
-
+ 
 main{
     text-align: center;
     padding: 20px;
+    
 }
 
 h1, h2{
