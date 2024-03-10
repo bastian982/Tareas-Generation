@@ -9,7 +9,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
 </head>
 
-<body class ="bg-info">
+<body class ="bg-secondary">
     <header class="bg-danger">
         <ul class="nav nav-tabs bg-primary-subtle">
             <li class="nav-item">
@@ -28,10 +28,11 @@
                 <li><a class="dropdown-item" href="./exercise3.html">Exercise #3</a></li>
                 <li><a class="dropdown-item" href="./exercise4.html">Exercise #4</a></li>
                 <li><a class="dropdown-item" href="./exercise5.html">Exercise #5</a></li>
+                <li><a class="dropdown-item" href="./exercise6.html">Exercise #6</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              <a class="nav-link disabled" aria-disabled="true">Tarea 3</a>
             </li>
           </ul>
     </header>
@@ -39,35 +40,48 @@
       <h1 class="text-center text-light">Ejercicios JavaScript</h1>
       <h2 class="text-center text-light">Exercise #5</h2>
       <h3>Código</h3>
-      <code class ="text-black">function findCommonCourses(curso1, curso2) {</code>
-        <br>
-      <code class ="text-black">let cursoComun = [];</code>
+      <code class="text-light">let people = ["Maria", "Dani", "Luis", "Juan", "Camila"];</code>
       <br>
-      <code class ="text-black">for (let i = 0; i < curso1.length; i++) {</code>
+      <code class="text-light">for (let i = 0; i < people.length; i++) {</code>
         <br>
-        <code class ="text-black">let curso = curso1[i];</code>
+        <code class="text-light">console.log(people[i]);</code>
         <br>
-        <code class ="text-black">for (let j = 0; j < curso2.length; j++) {</code>
-          <br>
-          <code class ="text-black">if (curso === curso2[j]) {</code>
-            <br>
-            <code class ="text-black">cursoComun.push(curso);</code>
-            <br>
-            <code class ="text-black">break; </code>
-            <br>
-            <code class ="text-black">}</code>
-            <br>
-          <code class ="text-black">}</code>
-          <br>
-        <code class ="text-black">}</code>
+       <code class="text-light">}</code> 
+       <br>
+       <code class="text-light">people.splice(1, 1);</code>
+       <br>
+       <code class="text-light">console.log(people);</code>
+       <br>
+       <code class="text-light">people.splice(2, 1);</code>
+       <br>
+       <code class="text-light">console.log(people);</code>
+       <br>
+       <code class="text-light">let index = people.indexOf("Luis");</code>
+       <br>
+       <code class="text-light">if (index !== -1) {</code>
         <br>
-        <code class ="text-black">for (let i = 0; i < cursoComun.length; i++) {</code>
-          <br>
-          <code class ="text-black">console.log(`Cursos en comun: ${cursoComun[i]}`);</code>
-          <br>
-        <code class ="text-black">}</code>
+        <code class="text-light">people.unshift(people.splice(index, 1)[0]);</code>
         <br>
-        <code class ="text-black">}</code>
+        <code class="text-light">}</code>
+       <br>
+       <code class="text-light">console.log(people);</code> 
+       <br>
+       <code class="text-light">people.push("Bastian");</code>
+       <br>
+       <code class="text-light">console.log(people);</code>
+       <br>
+       <code class="text-light">for (let i = 0; i < people.length; i++) {</code>
+        <br>
+        <code class="text-light">console.log(people[i]);</code>
+        <br>
+        <code class="text-light">if(people[i] === "Maria"){</code>
+          <br>
+          <code class="text-light">break; } }</code>
+          <br>
+          <code class="text-light">console.log(people.indexOf("Maria") );</code>
+          <br>
+          <code class="text-light">console.log(people);</code>
+    
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
