@@ -20,14 +20,14 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
                 let respuesta = prompt("¿Es mayor o menor que " + numero + "?");
 
-                if (respuesta === "mayor") {
+                if (respuesta === "Mayor") {
                     min = numero + 1;
                     adivinar();
-                } else if (respuesta === "menos") {
+                } else if (respuesta === "Menor") {
                     max = numero - 1;
                     adivinar();
                 } else {
-                    alert("Responder con 'mayor' o 'menos'.");
+                    alert("Responder con 'Mayor' o 'Menor'.");
                     adivinar();
                 }
             }
