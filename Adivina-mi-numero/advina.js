@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 alert("¡Adiviné tu número! El número en el que estabas pensando es: " + numero + ".\nIntentos: " + intentos);
                 location.reload(); // Recargar la página para reiniciar el juego
             } else {
-                let respuesta = prompt("¿Es mayor o menor que " + numero + "?");
+                let respuesta = prompt("¿Es Mayor o Menor que " + numero + "?");
 
                 if (respuesta === "Mayor") {
                     min = numero + 1;
